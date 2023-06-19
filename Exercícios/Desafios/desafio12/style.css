@@ -5,56 +5,91 @@
   @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 *{
-    margin: 0%;
-    background-size: auto;
+    margin: 0%; 
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 :root{
-    --header: 'Passion One';
-    --main: 'Sriracha'; 
+    --font1: 'Passion One';
+    --font2: 'Sriracha'; 
 }
 
 header{
     background-color: black;
     color: white;
-    font-size: 5em;
     padding-top: 10px;
     text-align: center;
-    font-family: var(--header);
+    font-family: var(--font1);     
+}
+
+header>h1{
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header>p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: white;
+    padding-bottom: 40px;  
 }
 
 a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover, footer a:hover{
+    text-decoration: underline;
 }
 
 section{
-    font-family: var(--main);
+    font-family: var(--font2);
     line-height: 2em;
-    padding-top: 40px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 30px;
-    font-size: 60px;
-    font-weight: 300px;
+    font-size: 4vw; 
+}
+
+section>p{
+    padding-bottom: 3em;
+}
+
+#img>p{
+    background-color: rgba(0, 0, 0, 0.322);
+    display: inline-block;
+    padding: 6px;
+    text-shadow: 1px 1px 0px black;
+    
 }
 
 #img{
     color: white;
+    background-color: rgb(109, 109, 109);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.685);
     background-attachment: fixed; 
 }
 
 .img1{
-    background-image: url(pacote-d012/imagens/background001.jpg);      
+    background-image: url(pacote-d012/imagens/background001.jpg); 
+    background-size: cover;    
+    background-position: right center;
 }
 
 .img2{
     background-image: url(pacote-d012/imagens/background002.jpg);
+    background-size: cover;
 }
 
 .normal{
     padding-bottom: 3em;  
+    background-color: white;
+    color: black;
 }
 
 footer{
